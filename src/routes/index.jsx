@@ -16,3 +16,4 @@ export function RouteApp() {
     );
   }
 
+/Users/adirson/Desktop/harve/ecommerce/src/routes/index.jsx
