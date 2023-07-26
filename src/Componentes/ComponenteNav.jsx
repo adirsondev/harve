@@ -17,8 +17,8 @@ function ComponenteNav() {
             />
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/products">Produtos</Nav.Link>
+            <Nav.Link href="/">Inicio</Nav.Link>
+            <Nav.Link href="/products">Productos</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
