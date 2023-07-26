@@ -6,7 +6,7 @@ function Home() {
   return (
     <Container>
       <Row>
-        <Col>INICIO</Col>
+        <Col>HOME</Col>
       </Row>
     </Container>
   );
