@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* Titulo y texto */
+
+.text-container {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-container {
+  padding: 50px 0;
+}

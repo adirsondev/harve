@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "../Pages/home";
-import { Produto } from "../Pages/produto";
+import { Products } from "../Pages/products";
 import ComponenteNav from "../Componentes/ComponenteNav";
 
 export function RouteApp() {
@@ -11,7 +11,7 @@ export function RouteApp() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/produto" element={<Produto />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>

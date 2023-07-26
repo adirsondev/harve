@@ -1,24 +1,21 @@
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ComponenteCarousel from "../Componentes/ComponenteCarousel";
 import ProductCard from "../Componentes/ProductCard";
 import "../App.css";
 import products from "../Componentes/ProductList"; 
 
-function Home() {
+function Products() {
   return (
     <div>
-      {/* Carrusel */}
-      <ComponenteCarousel />
-      {/* Título y descripción */}
       <Container className="content-container">
         <Row>
           <Col>
-            <div className="text-container"> 
-              <h1>Nuestros productos destacados</h1>
+            <div className="text-container">
+              <h1>Productos</h1> {/* Corregir el texto "Nuestos" a "Nuestros" */}
               <p>Te presentamos las mejores soluciones para ERP de tu empresa</p>
-            </div> 
+            </div>
           </Col>
         </Row>
         <Row>
@@ -26,16 +23,16 @@ function Home() {
           {products.map((product) => (
             <Col key={product.id}>
               <ProductCard
-                nombre={product.name}
-                precio={product.price}
-                imagen={product.image}
+                nombre={product.name} // Corregir el nombre de las propiedades
+                precio={product.price} // Corregir el nombre de las propiedades
+                imagen={product.image} // Corregir el nombre de las propiedades
               />
             </Col>
           ))}
         </Row>
-      </Container>  
+      </Container>
     </div>
   );
 }
 
-export { Home };
+export { Products };
