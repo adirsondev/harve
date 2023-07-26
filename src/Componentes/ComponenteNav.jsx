@@ -1,17 +1,21 @@
-function ComponenteNav(props) {
-    return (
-        <div
-            style={{
-                maxHeight: "80px",
-                width: "100%",
-                backgroundColor: "#000",
-                color: "#fff",
-                padding: "2%"
-            }}
-        >
-            
-        </div>
-    );
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+function ComponenteNav() {
+  return (
+    <>
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">AdirStore</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Produtos</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
+  );
 }
 
 export default ComponenteNav;
