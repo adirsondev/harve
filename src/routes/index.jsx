@@ -15,5 +15,3 @@ export function RouteApp() {
       </BrowserRouter>
     );
   }
-
-/Users/adirson/Desktop/harve/ecommerce/src/routes/index.jsx
